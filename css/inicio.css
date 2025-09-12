@@ -1,0 +1,20 @@
+/* Barra de navegación principal */
+.barra-navegacion {
+	width: 100%;
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.barra-navegacion a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 1.1rem;
+	transition: color 0.2s;
+}
+.barra-navegacion a:hover {
+	color: #b8860b;
+}

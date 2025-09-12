@@ -1,6 +1,0 @@
-.contenedor1, .contenedor2 , .contenedor3 , .contenedor4{
-    display: flex;
-    gap: 120px;
-    justify-content: center;
-    margin-bottom: 40px;
-}
