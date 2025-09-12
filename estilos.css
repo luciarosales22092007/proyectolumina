@@ -1,27 +1,6 @@
-div{
-    width: 100%;
-}
-
-.menuSup{
-height: 30px;
-background-color:lightgoldenrodyellow;
-}
-
-.contenedor{
-    background-color: lightgrey;
-    height: 300px;
-}
-
-.div1, .div2{
-    height: 300px;
-    width: 300px;
-    
-}
-
-.div1{
-    background-color: lightgoldenrodyellow;
-}
-
-.div2{
-    background-color: lightpink;
+.contenedor1, .contenedor2{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    margin-bottom: 40px;
 }

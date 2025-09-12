@@ -4,66 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lumina.bijou</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header>
     <img src="imagen/logo lumina.jpg" alt="logo" width="150px">
   </header>
-  <div>
-       <h2>Pulsera VanCleef</h2>
-      <img src="imagen/img_7734-bd999d422fd6476cb617526995164612-1024-1024.webp"  width="250px"><br>
-      <label for="pulsera">Seleccione pulsera</label>
-      <select name="pulsera" id="pul">
+  <div class="contenedor1">
+    <div>
+         <h2>Pulsera VanCleef</h2>
+        <img src="imagen/img_7734-bd999d422fd6476cb617526995164612-1024-1024.webp"  width="250px"><br>
+        <label for="pulsera">Seleccione pulsera</label>
+        <select name="pulsera" id="pul">
+        <option value="Opcion1">Acero quirurgico</option>
+        <option value="Opcion2">Acero dorado</option>
+        <option value="Opcion3">Plata 925</option>
+    
+        </select>
+        <p><strong>Pulsera VanCleef Roja 19cm</strong></p>
+        <p><strong>Precio:</strong>$7.000</p><br>
+         <input type="submit" name="Comprar" value="Comprar ahora">
+      <input type="submit" name="Añadir"value="Añadir al carrito">
+  
+    </div>
+  
+     <div>
+         <h2>Pulsera Mostacillas</h2>
+        <img src="imagen/pulseras mostacillas.webp"  width="250px"><br>
+        <label for="pulsera">Seleccione collor</label>
+        <select name="pulsera" id="pul">
+        <option value="Opcion1">Rojo</option>
+        <option value="Opcion2">Negro</option>
+        <option value="Opcion3">Blanco</option>
+    
+        </select>
+        <p><strong>Pulseras Mostacillas Colores 19cm</strong></p>
+        <p><strong>Precio:</strong>$4.000</p><br>
+         <input type="submit" name="Comprar" value="Comprar ahora">
+      <input type="submit" name="Añadir"value="Añadir al carrito">
+  
+    </div>
+  
+    <div>
+      <h2>Pulsera Ring</h2>
+      <img src="imagen/img_20230919_174537_3431-eaf1a877589a9430b316951589698243-1024-1024.webp" width="250px"><br>
+      <label for=" pulsera">Seleccione pulsera</label>
+      <select name="pulsera" id="pulse">
       <option value="Opcion1">Acero quirurgico</option>
       <option value="Opcion2">Acero dorado</option>
       <option value="Opcion3">Plata 925</option>
   
+      </select><br>
+      <label for="Colores">Seleccione el color</label>
+      <select name="Color" id="colorcito">
+        <option value="Opcion1">Rojo</option>
+        <option value="Opcion2">Negro</option>
+        <option value="Opcion3">Rosado</option>
+        <option value="Opcion4">Blanco</option>
       </select>
-      <p><strong>Pulsera VanCleef Roja 19cm</strong></p>
-      <p><strong>Precio:</strong>$7.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+      <p><strong>Pulsera Ring Colores19cm</strong></p>
+      <p><strong>Precio:</strong>$5.000</p>
+      <input type="submit" name="Comprar" value="Comprar ahora">
+      <input type="submit" name="Añadir"value="Añadir al carrito">
+    </div>
 
   </div>
 
-   <div>
-       <h2>Pulsera Mostacillas</h2>
-      <img src="imagen/pulseras mostacillas.webp"  width="250px"><br>
-      <label for="pulsera">Seleccione collor</label>
-      <select name="pulsera" id="pul">
-      <option value="Opcion1">Rojo</option>
-      <option value="Opcion2">Negro</option>
-      <option value="Opcion3">Blanco</option>
-  
-      </select>
-      <p><strong>Pulseras Mostacillas Colores 19cm</strong></p>
-      <p><strong>Precio:</strong>$4.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-
-  </div>
-  <div>
-    <h2>Pulsera Ring</h2>
-    <img src="imagen/img_20230919_174537_3431-eaf1a877589a9430b316951589698243-1024-1024.webp" width="250px"><br>
-    <label for=" pulsera">Seleccione pulsera</label>
-    <select name="pulsera" id="pulse">
-    <option value="Opcion1">Acero quirurgico</option>
-    <option value="Opcion2">Acero dorado</option>
-    <option value="Opcion3">Plata 925</option>
-
-    </select><br>
-    <label for="Colores">Seleccione el color</label>
-    <select name="Color" id="colorcito">
-      <option value="Opcion1">Rojo</option>
-      <option value="Opcion2">Negro</option>
-      <option value="Opcion3">Rosado</option>
-      <option value="Opcion4">Blanco</option>
-    </select>
-    <p><strong>Pulsera Ring Colores19cm</strong></p>
-    <p><strong>Precio:</strong>$5.000</p>
-    <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-  </div>
+  <div class="contenedor2">
   <div>
     <h2>Aritos butterfly</h2>
     <img src="imagen/aritos butterfly.webp" alt="aritos" width="250px"><br>
@@ -86,8 +93,9 @@
      <input type="submit" name="Comprar" value="Comprar ahora">
     <input type="submit" name="Añadir"value="Añadir al carrito">
   </div>
-   <div>
 
+
+   <div>
     <h2>Aritos Roxy</h2>
     <img src="imagen/aritos argolla.jpeg" alt="aritos" width="250px"><br>
     <label for="Seleccione aritos">Seleccione aritos</label>
@@ -108,6 +116,7 @@
     <input type="submit" name="Añadir"value="Añadir al carrito">
   </div>
 
+   <div>
   <h2>Aritos Abejorro</h2>
     <img src="imagen/aros abejorro.webp" alt="aritos" width="250px"><br>
     <label for="Seleccione aritos">Seleccione aritos</label>
@@ -120,8 +129,8 @@
     <p><strong> Precio:</strong> $6.500</p><br>
      <input type="submit" name="Comprar" value="Comprar ahora">
     <input type="submit" name="Añadir"value="Añadir al carrito">
-
-
+  </div>
+  </div>
 
   <div>
        <h2>Collar Cereza</h2>
