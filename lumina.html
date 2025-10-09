@@ -1,266 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lumina.bijou</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/productos.css">
 </head>
 <body>
 
- 
   <div class="centrar-imagen">
-  <img src="imagen/WhatsApp Image 2025-09-12 at 12.59.25.jpeg" alt="Logo">
-</div>
+    <img src="imagen/WhatsApp Image 2025-09-12 at 12.59.25.jpeg" alt="Logo">
+  </div>
+
+  
   <div class="contenedor1">
-    <div>
-         <h2>Pulsera VanCleef</h2>
-        <img src="imagen/img_7734-bd999d422fd6476cb617526995164612-1024-1024.webp"  width="250px"><br>
-        <label for="pulsera">Seleccione pulsera</label>
-        <select name="pulsera" id="pul">
-        <option value="Opcion1">Acero quirurgico</option>
-        <option value="Opcion2">Acero dorado</option>
-        <option value="Opcion3">Plata 925</option>
-    
-        </select>
-        <p><strong>Pulsera VanCleef Roja 19cm</strong></p>
-        <p><strong>Precio:</strong>$7.000</p><br>
-         <input type="submit" name="Comprar" value="Comprar ahora">
-      <input type="submit" name="Añadir"value="Añadir al carrito">
-  
-    </div>
-  
-     <div>
-         <h2>Pulsera Mostacillas</h2>
-        <img src="imagen/pulseras mostacillas.webp"  width="250px"><br>
-        <label for="pulsera">Seleccione collor</label>
-        <select name="pulsera" id="pul">
-        <option value="Opcion1">Rojo</option>
-        <option value="Opcion2">Negro</option>
-        <option value="Opcion3">Blanco</option>
-    
-        </select>
-        <p><strong>Pulseras Mostacillas Colores 19cm</strong></p>
-        <p><strong>Precio:</strong>$4.000</p><br>
-         <input type="submit" name="Comprar" value="Comprar ahora">
-      <input type="submit" name="Añadir"value="Añadir al carrito">
-  
-    </div>
-  
-    <div>
-      <h2>Pulsera Ring</h2>
-      <img src="imagen/img_20230919_174537_3431-eaf1a877589a9430b316951589698243-1024-1024.webp" width="250px"><br>
-      <label for=" pulsera">Seleccione pulsera</label>
-      <select name="pulsera" id="pulse">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
-      </select><br>
-      <label for="Colores">Seleccione el color</label>
-      <select name="Color" id="colorcito">
-        <option value="Opcion1">Rojo</option>
-        <option value="Opcion2">Negro</option>
-        <option value="Opcion3">Rosado</option>
-        <option value="Opcion4">Blanco</option>
+    <div class="producto animar">
+      <h2>Pulsera VanCleef</h2>
+      <img src="imagen/img_7734-bd999d422fd6476cb617526995164612-1024-1024.webp" alt="Pulsera VanCleef">
+      <label for="pul1">Seleccione material</label>
+      <select name="pulsera" id="pul1">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
       </select>
-      <p><strong>Pulsera Ring Colores19cm</strong></p>
-      <p><strong>Precio:</strong>$5.000</p>
-      <input type="submit" name="Comprar" value="Comprar ahora">
-      <input type="submit" name="Añadir"value="Añadir al carrito">
+      <p><strong>Pulsera VanCleef Roja 19cm</strong></p>
+      <p><strong>Precio:</strong> $7.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
     </div>
 
+    <div class="producto animar">
+      <h2>Pulsera Mostacillas</h2>
+      <img src="imagen/pulseras mostacillas.webp" alt="Pulsera Mostacillas">
+      <label for="pul2">Seleccione color</label>
+      <select name="color" id="pul2">
+        <option>Rojo</option>
+        <option>Negro</option>
+        <option>Blanco</option>
+      </select>
+      <p><strong>Pulseras Mostacillas Colores 19cm</strong></p>
+      <p><strong>Precio:</strong> $4.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
+
+    <div class="producto animar resaltar">
+      <h2>Pulsera Ring</h2>
+      <img src="imagen/img_20230919_174537_3431-eaf1a877589a9430b316951589698243-1024-1024.webp" alt="Pulsera Ring">
+      <label for="pul3">Material</label>
+      <select name="material" id="pul3">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <label for="col1">Color</label>
+      <select name="color" id="col1">
+        <option>Rojo</option>
+        <option>Negro</option>
+        <option>Rosado</option>
+        <option>Blanco</option>
+      </select>
+      <p><strong>Pulsera Ring Colores 19cm</strong></p>
+      <p><strong>Precio:</strong> $5.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
   </div>
 
+  <!-- Aritos -->
   <div class="contenedor2">
-  <div>
-    <h2>Aritos butterfly</h2>
-    <img src="imagen/aritos butterfly.webp" alt="aritos" width="250px"><br>
-    <label for="Seleccione aritos">Seleccione aritos</label>
-       <select name="aritos" id="aros">
-    <option value="Opcion1">Acero quirurgico</option>
-    <option value="Opcion2">Acero dorado</option>
-    <option value="Opcion3">Plata 925</option>
-    </select><br>
-    <label for="Colores">Seleccione el color</label>
-    <select name="Color" id="colorcito">
-      <option value="Opcion1">Tornasolado</option>
-      <option value="Opcion2">Negro</option>
-      <option value="Opcion3">Rosado</option>
-      <option value="Opcion4">Blanco</option>
-    </select>
+    <div class="producto animar">
+      <h2>Aritos Butterfly</h2>
+      <img src="imagen/aritos butterfly.webp" alt="Aritos Butterfly">
+      <label for="aro1">Material</label>
+      <select name="aritos" id="aro1">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <label for="col2">Color</label>
+      <select name="color" id="col2">
+        <option>Tornasolado</option>
+        <option>Negro</option>
+        <option>Rosado</option>
+        <option>Blanco</option>
+      </select>
+      <p><strong>Aritos Butterfly Argolla</strong></p>
+      <p><strong>Precio:</strong> $6.500</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
 
-    <p><strong> Aritos Butterfly Argolla </strong></p>
-    <p><strong> Precio:</strong> $6.500</p>
-     <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+    <div class="producto animar">
+      <h2>Aritos Roxy</h2>
+      <img src="imagen/aritos argolla.jpeg" alt="Aritos Roxy">
+      <label for="aro2">Material</label>
+      <select name="aritos" id="aro2">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <label for="tam1">Tamaño</label>
+      <select name="tamaño" id="tam1">
+        <option>2 cm</option>
+        <option>3 cm</option>
+        <option>4 cm</option>
+      </select>
+      <p><strong>Aritos Roxy</strong></p>
+      <p><strong>Precio:</strong> $5.500</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
+
+    <div class="producto animar resaltar">
+      <h2>Aritos Abejorro</h2>
+      <img src="imagen/aros abejorro.webp" alt="Aritos Abejorro">
+      <label for="aro3">Material</label>
+      <select name="aritos" id="aro3">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <p><strong>Aritos Abejorro</strong></p>
+      <p><strong>Precio:</strong> $6.500</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
   </div>
 
-
-   <div>
-    <h2>Aritos Roxy</h2>
-    <img src="imagen/aritos argolla.jpeg" alt="aritos" width="250px"><br>
-    <label for="Seleccione aritos">Seleccione aritos</label>
-       <select name="aritos" id="aros">
-    <option value="Opcion1">Acero quirurgico</option>
-    <option value="Opcion2">Acero dorado</option>
-    <option value="Opcion3">Plata 925</option>
-    </select><br>
-    <label for="tamaños">Seleccione tamaño</label>
-          <select name="tamaño" id="tam">
-    <option value="Opcion1">2 cm</option>
-    <option value="Opcion2">3 cm</option>
-    <option value="Opcion3">4 cm</option>
-    </select>
-    <p><strong> Aritos Roxy </strong></p>
-    <p><strong> Precio:</strong> $5.500</p><br>
-     <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-  </div>
-
-   <div>
-  <h2>Aritos Abejorro</h2>
-    <img src="imagen/aros abejorro.webp" alt="aritos" width="250px"><br>
-    <label for="Seleccione aritos">Seleccione aritos</label>
-       <select name="aritos" id="aros">
-    <option value="Opcion1">Acero quirurgico</option>
-    <option value="Opcion2">Acero dorado</option>
-    <option value="Opcion3">Plata 925</option>
-    </select><br>
-     <p><strong> Aritos Abejorro</strong></p>
-    <p><strong> Precio:</strong> $6.500</p><br>
-     <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-  </div>
-  </div>
-
+  <!-- Collares -->
   <div class="contenedor3">
-  <div>
-       <h2>Collar Cereza</h2>
-      <img src="imagen/collar cereza.webp"  width="250px"><br>
-      <label for="collar">Seleccione collar</label>
-      <select name="collar" id="coll">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
+    <div class="producto animar resaltar">
+      <h2>Collar Cereza</h2>
+      <img src="imagen/collar cereza.webp" alt="Collar Cereza">
+      <label for="coll1">Material</label>
+      <select name="collar" id="coll1">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
       </select>
       <p><strong>Collar Cereza 45cm</strong></p>
-      <p><strong>Precio:</strong>$10.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+      <p><strong>Precio:</strong> $10.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
 
-  </div>
-
-   <div>
-       <h2>Collar Corazon</h2>
-      <img src="imagen/collar corazon.webp"  width="250px"><br>
-      <label for="collar">Seleccione collar</label>
-      <select name="collar" id="coll">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
+    <div class="producto animar">
+      <h2>Collar Corazón</h2>
+      <img src="imagen/collar corazon.webp" alt="Collar Corazón">
+      <label for="coll2">Material</label>
+      <select name="collar" id="coll2">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
       </select>
-      <p><strong>Collar Corazon
-         45cm</strong></p>
-      <p><strong>Precio:</strong>$9.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+      <p><strong>Collar Corazón 45cm</strong></p>
+      <p><strong>Precio:</strong> $9.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
 
-  </div>
-
-   <div>
-       <h2>Collar Perlitas</h2>
-      <img src="imagen/collar perlitas.webp"  width="250px"><br>
-      <label for="collar">Seleccione collar</label>
-      <select name="collar" id="coll">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
+    <div class="producto animar">
+      <h2>Collar Perlitas</h2>
+      <img src="imagen/collar perlitas.webp" alt="Collar Perlitas">
+      <label for="coll3">Material</label>
+      <select name="collar" id="coll3">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
       </select>
       <p><strong>Collar Perlitas 45cm</strong></p>
-      <p><strong>Precio:</strong>$8.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-
+      <p><strong>Precio:</strong> $8.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
   </div>
-  </div>
 
+  <!-- Anillos -->
   <div class="contenedor4">
-<div>
-       <h2>Anillo Corazon</h2>
-      <img src="imagen/anillo corazon.webp"  width="250px"><br>
-      <label for="Anillo">Seleccione anillo</label>
-      <select name="pulsera" id="pul">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
-      </select><br>
-      <label for="tamaño">Seleccione talle</label>
-      <select name="talle" id="tall">
-      <option value="Opcion1">n°17</option>
-      <option value="Opcion2">n°18</option>
-      <option value="Opcion3">n°19</option>
-  
+    <div class="producto animar">
+      <h2>Anillo Corazón</h2>
+      <img src="imagen/anillo corazon.webp" alt="Anillo Corazón">
+      <label for="an1">Material</label>
+      <select name="anillo" id="an1">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
       </select>
-      <p><strong>Anillo Corazon</strong></p>
-      <p><strong>Precio:</strong>$3.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+      <label for="tal1">Talle</label>
+      <select name="talle" id="tal1">
+        <option>n°17</option>
+        <option>n°18</option>
+        <option>n°19</option>
+      </select>
+      <p><strong>Anillo Corazón</strong></p>
+      <p><strong>Precio:</strong> $3.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
 
-  </div>
-  <div>
-       <h2>Anillo Ojito</h2>
-      <img src="imagen/anillo ojito.webp"  width="250px"><br>
-      <label for="Anillo">Seleccione anillo</label>
-      <select name="pulsera" id="pul">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
-      </select><br>
-      <label for="tamaño">Seleccione talle</label>
-      <select name="talle" id="tall">
-      <option value="Opcion1">n°17</option>
-      <option value="Opcion2">n°18</option>
-      <option value="Opcion3">n°19</option>
-  
+    <div class="producto animar">
+      <h2>Anillo Ojito</h2>
+      <img src="imagen/anillo ojito.webp" alt="Anillo Ojito">
+      <label for="an2">Material</label>
+      <select name="anillo" id="an2">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <label for="tal2">Talle</label>
+      <select name="talle" id="tal2">
+        <option>n°17</option>
+        <option>n°18</option>
+        <option>n°19</option>
       </select>
       <p><strong>Anillo Ojito</strong></p>
-      <p><strong>Precio:</strong>$3.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
+      <p><strong>Precio:</strong> $3.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
 
-  </div>
-  </div>
-
-   <div>
-       <h2>Anillo Lazos</h2>
-      <img src="imagen/anillo lazos.webp"  width="250px"><br>
-      <label for="Anillo">Seleccione anillo</label>
-      <select name="pulsera" id="pul">
-      <option value="Opcion1">Acero quirurgico</option>
-      <option value="Opcion2">Acero dorado</option>
-      <option value="Opcion3">Plata 925</option>
-  
-      </select><br>
-      <label for="tamaño">Seleccione talle</label>
-      <select name="talle" id="tall">
-      <option value="Opcion1">n°17</option>
-      <option value="Opcion2">n°18</option>
-      <option value="Opcion3">n°19</option>
-  
+    <div class="producto animar mostrar" id="anillo-lazos">
+      <h2>Anillo Lazos</h2>
+      <img src="imagen/anillo lazos.webp" alt="Anillo Lazos">
+      <label for="an3">Material</label>
+      <select name="anillo" id="an3">
+        <option>Acero quirúrgico</option>
+        <option>Acero dorado</option>
+        <option>Plata 925</option>
+      </select>
+      <label for="tal3">Talle</label>
+      <select name="talle" id="tal3">
+        <option>n°17</option>
+        <option>n°18</option>
+        <option>n°19</option>
       </select>
       <p><strong>Anillo Lazos</strong></p>
-      <p><strong>Precio:</strong>$4.000</p><br>
-       <input type="submit" name="Comprar" value="Comprar ahora">
-    <input type="submit" name="Añadir"value="Añadir al carrito">
-
+      <p><strong>Precio:</strong> $4.000</p>
+      <button class="boton comprar">Comprar ahora</button>
+      <button class="boton carrito">Añadir al carrito</button>
+    </div>
   </div>
 
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const mostrar = document.querySelector('.mostrar');
+        if (mostrar) mostrar.classList.add('visible');
+      }, 1000);
+    });
+  </script>
 
 </body>
 </html>
