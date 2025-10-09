@@ -155,16 +155,11 @@
       <img src="imagen/pulseras mostacillas.webp" alt="Imagen 3">
     </div>
 
-    <!-- Elemento con clase .animar -->
-    <div class="animar">
-      <h2>Animación al Cargar</h2>
-      <p>Este texto aparece con una animación suave al cargar la página.</p>
-    </div>
 
     <!-- Elemento con clase .mostrar (se activa con JS) -->
     <div class="mostrar" id="elementoMostrar">
       <h2>¡Gracias por visitar nuestro sitio web!</h2>
-      <p> Para consultas, ingrese en el boton "Contacto"<code>.visible</code>.</p>
+      <p> Para consultas, ingrese en el boton "Contacto"<code></code>.</p>
     </div>
   </main>
 
@@ -172,7 +167,7 @@
     // Añadir clase 'visible' a .mostrar después de 2 segundos
     setTimeout(() => {
       document.getElementById('elementoMostrar').classList.add('visible');
-    }, 2000);
+    }, 1000);
   </script>
 
 </body>
