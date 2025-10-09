@@ -1,0 +1,203 @@
+/* ===== RESET Y ESTILOS GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdf6f0, #f8f0e5);
+  color: #4a3c30;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Logo */
+.centrar-logo {
+  text-align: center;
+  margin: 20px 0 40px;
+}
+
+.centrar-logo img {
+  width: 150px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.centrar-logo img:hover {
+  transform: scale(1.08) rotate(3deg);
+  opacity: 0.9;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Secciones */
+.info-contacto,
+.formulario-contacto {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease;
+}
+
+.info-contacto:hover,
+.formulario-contacto:hover {
+  transform: translateY(-5px);
+}
+
+/* Clase .resaltar */
+.resaltar {
+  color: #b38867;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.resaltar::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #b38867;
+  border-radius: 3px;
+}
+
+/* Datos de contacto */
+.datos-contacto {
+  margin-top: 20px;
+}
+
+.item-contacto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.item-contacto:hover {
+  background: #fdf9f5;
+  transform: translateX(5px);
+}
+
+.item-contacto img {
+  width: 28px;
+  opacity: 0.8;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.item-contacto img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #b38867;
+  box-shadow: 0 0 0 3px rgba(179, 136, 103, 0.2);
+}
+
+/* Botón de envío */
+.boton-enviar {
+  background: #b38867;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.boton-enviar:hover {
+  background: #9a6e45;
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
+/* ===== CLASES ESPECIALES ===== */
+
+/* .animar: aparición suave al cargar */
+.animar {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.8s forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .mostrar: mensaje de éxito */
+#mensaje-exito {
+  text-align: center;
+  margin-top: 30px;
+  padding: 16px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 12px;
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#mensaje-exito.visible {
+  opacity: 1;
+}
+
+/* .resaltar ya definido arriba */
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-contacto,
+  .formulario-contacto {
+    width: 95%;
+  }
+}

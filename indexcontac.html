@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - lumina.bijou</title>
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+  <!-- Logo animado -->
+  <div class="centrar-logo animar">
+    <img src="imagen/WhatsApp Image 2025-09-12 at 12.59.25.jpeg" alt="Logo lumina.bijou">
+  </div>
+
+  <main class="contenedor-principal">
+    <section class="info-contacto animar">
+      <h2 class="resaltar">¿Tenes preguntas?</h2>
+      <p>¡Escríbenos! Estamos encantados de ayudarte.</p>
+
+      <div class="datos-contacto">
+        <div class="item-contacto">
+          <img src="https://cdn-icons-png.flaticon.com/512/725/725643.png" alt="Email">
+          <span>hola@lumina.bijou</span>
+        </div>
+        <div class="item-contacto">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724638.png" alt="Teléfono">
+          <span>+54 9 2995100227</span>
+        </div>
+        <div class="item-contacto">
+          <img src="https://cdn-icons-png.flaticon.com/512/725/725695.png" alt="Instagram">
+          <span>@lumina.bijou</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="formulario-contacto animar">
+      <h2>Envíanos un mensaje</h2>
+      <form id="formContacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" placeholder="Tu mensaje..." rows="5" required></textarea>
+        <button type="submit" class="boton-enviar">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Mensaje de confirmación (inicialmente oculto) -->
+  <div id="mensaje-exito" class="mostrar">
+    ¡Gracias! Tu mensaje ha sido enviado.
+  </div>
+
+  <script>
+    // Simular envío y mostrar mensaje con la clase .visible
+    document.getElementById('formContacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('mensaje-exito').classList.add('visible');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
