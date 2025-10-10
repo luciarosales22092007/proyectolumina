@@ -9,14 +9,62 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #fdf6f0, #f8f0e5);
   color: #4a3c30;
-  padding: 20px;
+  padding: 0;
   min-height: 100vh;
 }
 
-/* Logo */
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.barra-navegacion {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  gap: 20px;
+}
+
+.nav-boton {
+  text-decoration: none;
+  color: #5a4a3a;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-boton:hover {
+  color: white;
+  background: #b38867;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Botón activo (Contacto) */
+.resaltar-activo {
+  color: white;
+  background: #b38867;
+  box-shadow: 0 2px 6px rgba(179, 136, 103, 0.4);
+}
+
+.resaltar-activo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(179, 136, 103, 0.5);
+}
+
+/* ===== LOGO Y CONTENIDO ===== */
 .centrar-logo {
   text-align: center;
-  margin: 20px 0 40px;
+  margin: 30px 0 40px;
 }
 
 .centrar-logo img {
@@ -31,17 +79,16 @@ body {
   opacity: 0.9;
 }
 
-/* Contenedor principal */
 .contenedor-principal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+  padding: 0 20px;
 }
 
-/* Secciones */
 .info-contacto,
 .formulario-contacto {
   background: white;
@@ -58,7 +105,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* Clase .resaltar */
+/* Clase .resaltar (título) */
 .resaltar {
   color: #b38867;
   position: relative;
@@ -108,6 +155,12 @@ body {
   transform: scale(1.1);
 }
 
+/* Enlace de Instagram */
+.item-contacto a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Formulario */
 form {
   display: flex;
@@ -146,58 +199,7 @@ form textarea:focus {
 }
 
 .boton-enviar:hover {
-  background: #9a6e45;
-  transform: scale(1.03);
-  opacity: 0.95;
-}
-
-/* ===== CLASES ESPECIALES ===== */
-
-/* .animar: aparición suave al cargar */
-.animar {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideIn 0.8s forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* .mostrar: mensaje de éxito */
-#mensaje-exito {
-  text-align: center;
-  margin-top: 30px;
-  padding: 16px;
-  background: #e8f5e9;
-  color: #2e7d32;
-  border-radius: 12px;
-  font-weight: bold;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
-
-#mensaje-exito.visible {
-  opacity: 1;
-}
-
-/* .resaltar ya definido arriba */
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .contenedor-principal {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-contacto,
-  .formulario-contacto {
-    width: 95%;
-  }
+  background: #9f6f4e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }

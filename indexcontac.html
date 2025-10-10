@@ -7,7 +7,17 @@
   <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-<a href="indexinicio.html"></a>
+
+  <!-- Barra de navegación -->
+  <nav class="barra-navegacion">
+    <div class="nav-contenedor">
+      <a href="indexinicio.html" class="nav-boton">Inicio</a>
+      <a href="productos.html" class="nav-boton">Productos</a>
+      <a href="contacto.html" class="nav-boton resaltar-activo">Contacto</a>
+      <!-- Puedes agregar más enlaces si lo deseas -->
+    </div>
+  </nav>
+
   <!-- Logo animado -->
   <div class="centrar-logo animar">
     <img src="imagen/WhatsApp Image 2025-09-12 at 12.59.25.jpeg" alt="Logo lumina.bijou">
@@ -16,7 +26,7 @@
   <main class="contenedor-principal">
     <section class="info-contacto animar">
       <h2 class="resaltar">¿Tenés preguntas?</h2>
-      <p>¡Escribinos, estamos encantados de ayudarte.!</p>
+      <p>¡Escribinos, estamos encantados de ayudarte!</p>
 
       <div class="datos-contacto">
         <div class="item-contacto">
@@ -25,12 +35,13 @@
         </div>
         <div class="item-contacto">
           <img src="https://cdn-icons-png.flaticon.com/512/724/724638.png" alt="Teléfono">
-          <span>+54 9 2995100227</span>
+          <span>+54 9 299 510 0227</span>
         </div>
         <div class="item-contacto">
           <img src="imagen/imagen instagram.jpg" alt="Instagram">
-        <a href="https://www.instagram.com/lumina.bijou/" target="_blank" rel="noopener noreferrer">
-          <span>@lumina.bijou</span>
+          <a href="https://www.instagram.com/lumina.bijou/" target="_blank" rel="noopener noreferrer">
+            <span>@lumina.bijou</span>
+          </a>
         </div>
       </div>
     </section>
@@ -47,13 +58,12 @@
     </section>
   </main>
 
-  <!-- Mensaje de confirmación (inicialmente oculto) -->
+  <!-- Mensaje de confirmación -->
   <div id="mensaje-exito" class="mostrar">
     ¡Gracias! Tu mensaje ha sido enviado.
   </div>
 
   <script>
-    // Simular envío y mostrar mensaje con la clase .visible
     document.getElementById('formContacto').addEventListener('submit', function(e) {
       e.preventDefault();
       document.getElementById('mensaje-exito').classList.add('visible');
