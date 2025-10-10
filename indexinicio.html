@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Página de Inicio </title>
   <style>
-    /* Estilos generales */
+   
     * {
       margin: 0;
       padding: 0;
@@ -31,7 +31,7 @@
       text-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
-    /* Efecto hover en botones */
+   
     .boton {
       background-color: #9f8266;
       color: rgb(0, 0, 0);
@@ -51,7 +51,7 @@
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
 
-    /* Efecto hover en imágenes */
+   
     .galeria {
       display: flex;
       justify-content: center;
@@ -75,7 +75,7 @@
       border: 3px solid white;
     }
 
-    /* Clase .resaltar */
+   
     .resaltar {
       background-color: rgba(255, 255, 255, 0.15);
       padding: 20px;
@@ -90,7 +90,7 @@
       background-color: rgba(255, 255, 255, 0.3);
     }
 
-    /* Clase .animar */
+   
     .animar {
       animation: fadeInUp 1.5s ease-out forwards;
       opacity: 0;
@@ -107,7 +107,7 @@
       }
     }
 
-    /* Clase .mostrar */
+   
     .mostrar {
       opacity: 0;
       transform: scale(0.9);
@@ -135,20 +135,20 @@
   </header>
 
   <main>
-    <!-- Botones con hover -->
+   
     <div style="text-align: center;">
      <a href="indexinicio.html"> <button class="boton">Inicio</button></a>
      <a href="lumina.html"> <button class="boton">Productos </button></a>
       <a href="indexcontac.html"><button class="boton">Contacto</button></a>
     </div>
 
-    <!-- Sección con clase .resaltar -->
+ 
     <div class="resaltar">
       <h2>Explora más en la sección de productos.</h2>
       <p>Este bloque tiene un fondo semitransparente y se vuelve más claro al pasar el mouse.</p>
     </div>
 
-    <!-- Imágenes con hover -->
+
     <div class="galeria">
       <img src="imagen/collar cereza.webp" alt="imagen 1" >
       <img src="imagen/anillo ojito.webp" alt="imagen 2" >
@@ -156,7 +156,7 @@
     </div>
 
 
-    <!-- Elemento con clase .mostrar (se activa con JS) -->
+   
     <div class="mostrar" id="elementoMostrar">
       <h2>¡Gracias por visitar nuestro sitio web!</h2>
       <p> Para consultas, ingrese en el botón "Contacto"<code></code>.</p>
@@ -165,7 +165,7 @@
   </main>
 
   <script>
-    // Añadir clase 'visible' a .mostrar después de 2 segundos
+  
     setTimeout(() => {
       document.getElementById('elementoMostrar').classList.add('visible');
     }, 1000);
