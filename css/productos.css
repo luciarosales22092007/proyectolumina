@@ -76,7 +76,7 @@ body {
   opacity: 0.95;
 }
 
-/* Contenedores */
+
 [class^="contenedor"] {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +85,7 @@ body {
   margin-bottom: 50px;
 }
 
-/* Producto base */
+
 .producto {
   background: white;
   border-radius: 18px;
