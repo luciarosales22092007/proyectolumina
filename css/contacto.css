@@ -1,4 +1,4 @@
-/* ===== RESET Y ESTILOS GENERALES ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ body {
   box-shadow: 0 4px 10px rgba(179, 136, 103, 0.5);
 }
 
-/* ===== LOGO Y CONTENIDO ===== */
+
 .centrar-logo {
   text-align: center;
   margin: 30px 0 40px;
@@ -105,7 +105,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* Clase .resaltar (título) */
+
 .resaltar {
   color: #b38867;
   position: relative;
@@ -124,7 +124,7 @@ body {
   border-radius: 3px;
 }
 
-/* Datos de contacto */
+
 .datos-contacto {
   margin-top: 20px;
 }
@@ -155,13 +155,13 @@ body {
   transform: scale(1.1);
 }
 
-/* Enlace de Instagram */
+
 .item-contacto a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Formulario */
+
 form {
   display: flex;
   flex-direction: column;
@@ -184,7 +184,10 @@ form textarea:focus {
   box-shadow: 0 0 0 3px rgba(179, 136, 103, 0.2);
 }
 
-/* Botón de envío */
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
 .boton-enviar {
   background: #b38867;
   color: white;
