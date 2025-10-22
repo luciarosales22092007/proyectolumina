@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lúmina Bijou</title>
+   
   <style>
 
     * {
@@ -135,8 +136,14 @@
 
   <main>
   
+    <div class="nav-contenedor">
+      <a href="indexinicio.html" class="nav-boton">Inicio</a>
+      <a href="lumina.html" class="nav-boton resaltar-activo">Productos</a>
+      <a href="indexcontac.html" class="nav-boton">Contacto</a>
+      
+    </div>
     <div style="text-align: center;">
-      <button class="boton">Inicio</button>
+      <button class="boton resaltar-activo">Inicio</button>
       <button class="boton">Productos</button>
       <button class="boton">Contacto</button>
     </div>
@@ -159,11 +166,11 @@
       <p>Explora las últimas tendencias en joyería con Lúmina Bijou.</p>
 
   <footer>
-    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Lúmina Bijou</p>
   </footer>
 
   <script>
-    // Añadir clase 'visible' a .mostrar después de 2 segundos
+  
     setTimeout(() => {
       document.getElementById('elementoMostrar').classList.add('visible');
     }, 2000);
