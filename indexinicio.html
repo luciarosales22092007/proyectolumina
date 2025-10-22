@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Página de Inicio </title>
+  <title>Página de Inicio con Efectos Visuales</title>
   <style>
-   * {
+
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -13,8 +14,8 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #efedea,#f6e3d4 , #f3f1ec); 
-      color: rgb(28, 23, 23);
+      background: linear-gradient(135deg, #f8f8f8, #f3e0b9, #efeff0);
+      color: rgb(6, 6, 6);
       min-height: 100vh;
       padding: 40px 20px;
     }
@@ -27,13 +28,12 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 20px;
-      text-shadow: 0 2px 8px rgba(249, 245, 245, 0.4);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
-   
     .boton {
-      background-color: #f6f4f2;
-      color: rgb(0, 0, 0);
+      background-color: #f6dbab;
+      color: white;
       border: none;
       padding: 12px 28px;
       font-size: 1.1rem;
@@ -45,12 +45,12 @@
     }
 
     .boton:hover {
-      background-color: #cfb480;
+      background-color: #f4ebb6;
       transform: scale(1.05) rotate(2deg);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
 
-   
+    /* Efecto hover en imágenes */
     .galeria {
       display: flex;
       justify-content: center;
@@ -74,9 +74,9 @@
       border: 3px solid white;
     }
 
-   
+    /* Clase .resaltar */
     .resaltar {
-      background-color: #5a4a3a(255, 255, 255, 0.15);
+      background-color: rgba(255, 255, 255, 0.15);
       padding: 20px;
       border-radius: 15px;
       margin: 20px auto;
@@ -86,10 +86,10 @@
     }
 
     .resaltar:hover {
-      background-color: rgba(162, 137, 137, 0.3);
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
-   
+    /* Clase .animar */
     .animar {
       animation: fadeInUp 1.5s ease-out forwards;
       opacity: 0;
@@ -106,7 +106,7 @@
       }
     }
 
-   
+    /* Clase .mostrar */
     .mostrar {
       opacity: 0;
       transform: scale(0.9);
@@ -129,45 +129,53 @@
 <body>
 
   <header>
-    <h1>¡Te damos la bienvenida a Lúmina Bijou!</h1>
-    <p>Elegancia en cada detalle.</p>
+    <h1>¡Bienvenido a mi Página!</h1>
+    <p>Explora los efectos visuales con CSS</p>
   </header>
 
   <main>
-   
+    <!-- Botones con hover -->
     <div style="text-align: center;">
-     <a href="indexinicio.html"> <button class="boton">Inicio</button></a>
-     <a href="lumina.html"> <button class="boton">Productos </button></a>
-      <a href="indexcontac.html"><button class="boton">Contacto</button></a>
+      <button class="boton">Inicio</button>
+      <button class="boton">Servicios</button>
+      <button class="boton">Contacto</button>
     </div>
 
- 
+    <!-- Sección con clase .resaltar -->
     <div class="resaltar">
-      <h2>Explora más en la sección de productos.</h2>
-      <p>¡Elegí tus favoritos!</p>
+      <h2>Sección Resaltada</h2>
+      <p>Este bloque tiene un fondo semitransparente y se vuelve más claro al pasar el mouse.</p>
     </div>
 
-
+    <!-- Imágenes con hover -->
     <div class="galeria">
-      <img src="imagen/collar cereza.webp" alt="imagen 1" >
-      <img src="imagen/anillo ojito.webp" alt="imagen 2" >
-      <img src="imagen/pulseras mostacillas.webp" alt="Imagen 3">
+      <img src="https://via.placeholder.com/180/ff6b6b/ffffff?text=Imagen+1" alt="Imagen 1">
+      <img src="https://via.placeholder.com/180/4ecdc4/ffffff?text=Imagen+2" alt="Imagen 2">
+      <img src="https://via.placeholder.com/180/45b7d1/ffffff?text=Imagen+3" alt="Imagen 3">
     </div>
 
+    <!-- Elemento con clase .animar -->
+    <div class="animar">
+      <h2>Animación al Cargar</h2>
+      <p>Este texto aparece con una animación suave al cargar la página.</p>
+    </div>
 
-   
+    <!-- Elemento con clase .mostrar (se activa con JS) -->
     <div class="mostrar" id="elementoMostrar">
-      <h2>¡Gracias por visitar nuestro sitio web!</h2>
-      <p> Para consultas, ingrese en el botón "Contacto"<code></code>.</p>
+      <h2>¡Mostrado con JavaScript!</h2>
+      <p>Este bloque se vuelve visible después de 2 segundos usando la clase <code>.visible</code>.</p>
     </div>
-    
   </main>
 
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+
   <script>
-  
+    // Añadir clase 'visible' a .mostrar después de 2 segundos
     setTimeout(() => {
       document.getElementById('elementoMostrar').classList.add('visible');
-    }, 1000);
+    }, 2000);
   </script>
 
 </body>
