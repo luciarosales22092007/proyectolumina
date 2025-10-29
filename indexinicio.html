@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lúmina Bijou</title>
-   
+  
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -43,15 +42,17 @@
       transition: all 0.3s ease;
       margin: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      text-decoration: none; /* Para quitar subrayado de enlaces */
+      display: inline-block;
     }
 
     .boton:hover {
       background-color: #f4ebb6;
+      color: #333; /* Mejor contraste al hacer hover */
       transform: scale(1.05) rotate(2deg);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
 
-    /* Efecto hover en imágenes */
     .galeria {
       display: flex;
       justify-content: center;
@@ -75,9 +76,8 @@
       border: 3px solid white;
     }
 
-    /* Clase .resaltar */
     .resaltar {
-      background-color: rgba(255, 255, 255, 0.15);
+      background-color: rgba(192, 21, 21, 0.15);
       padding: 20px;
       border-radius: 15px;
       margin: 20px auto;
@@ -90,7 +90,6 @@
       background-color: rgba(255, 255, 255, 0.3);
     }
 
-    /* Clase .animar */
     .animar {
       animation: fadeInUp 1.5s ease-out forwards;
       opacity: 0;
@@ -107,7 +106,6 @@
       }
     }
 
-    /* Clase .mostrar */
     .mostrar {
       opacity: 0;
       transform: scale(0.9);
@@ -135,46 +133,36 @@
   </header>
 
   <main>
-  
-    <div class="nav-contenedor">
-      <a href="indexinicio.html" class="nav-boton">Inicio</a>
-      <a href="lumina.html" class="nav-boton resaltar-activo">Productos</a>
-      <a href="indexcontac.html" class="nav-boton">Contacto</a>
-      
-    </div>
     <div style="text-align: center;">
-      <button class="boton resaltar-activo">Inicio</button>
-      <button class="boton">Productos</button>
-      <button class="boton">Contacto</button>
+      <a href="indexinicio.html" class="boton">Inicio</a>
+      <a href="lumina.html" class="boton">Productos</a>
+      <a href="indexcontac.html" class="boton">Contacto</a>
     </div>
 
-   
     <div class="galeria">
-      <img src="imagen/anillo ojito.webp" alt="Imagen 1">
-      <img src="imagen/collar corazon.webp" alt="Imagen 2">
-      <img src="imagen/aritos butterfly.webp" alt="Imagen 3">
+      <img src="imagen/anillo ojito.webp" alt="Anillo con diseño de ojito">
+      <img src="imagen/collar corazon.webp" alt="Collar en forma de corazón">
+      <img src="imagen/aritos butterfly.webp" alt="Aretes con diseño de mariposa">
     </div>
 
-   
     <div class="animar">
       <h2>¡PRECIOS IMPERDIBLES!</h2>
       <p>Para consultas, visite el contacto.</p>
     </div>
 
-    <div id="elementoMostrar" class="mostrar">
-      <h2>Descubre Nuestras Novedades</h2>
-      <p>Explora las últimas tendencias en joyería con Lúmina Bijou.</p>
+    <div id="elementoMostrar" class="mostrar" style="text-align: center; margin-top: 40px;">
+      <h2>Oferta Especial</h2>
+      <p>¡Descuento del 15% en tu primera compra!</p>
+  </main>
 
   <footer>
     <p>&copy; 2025 Lúmina Bijou</p>
   </footer>
 
   <script>
-  
     setTimeout(() => {
       document.getElementById('elementoMostrar').classList.add('visible');
     }, 2000);
   </script>
-
 </body>
 </html>
